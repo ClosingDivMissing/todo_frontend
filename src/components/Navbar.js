@@ -21,13 +21,13 @@ function Navbar() {
       .catch(() => setUser(null));
   }, []);
 
-  const logout = () => {
-    api.post("/auth/logout");
+  const logout = async () => {
+    await api.post("/auth/logout");
     setUser(null);
     navigate("/");
     setTimeout(() => {
       window.location.reload();
-    }, 100);
+    }, 400);
   };
 
   return (
