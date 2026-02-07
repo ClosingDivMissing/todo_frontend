@@ -131,7 +131,7 @@ function Home() {
             </div>
 
             <div className="action-buttons">
-              {editingTodoId == todo._id ? (
+              {editingTodoId === todo._id ? (
                 <></>
               ) : (
                 <button
