@@ -1,0 +1,160 @@
+.todo-page {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 30px;
+}
+
+.todo-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.todo-input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.todo-input:focus {
+  border-color: #7c3aed;
+}
+
+/* دکمه اضافه */
+.todo-add-btn {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 0 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.todo-add-btn:hover {
+  background-color: #6d28d9;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  background-color: white;
+  padding: 14px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #7c3aed;
+}
+
+.todo-text {
+  font-size: 15px;
+  color: #111827;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+.todo-edit-input {
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #9c9c9c;
+}
+.todo-delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 14px;
+  cursor: pointer;
+}
+.action-buttons {
+  gap: 15px;
+  flex-direction: row-reverse;
+  display: flex;
+}
+.todo-edit-btn {
+  background: none;
+  border: none;
+  color: #5932b4;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.todo-delete-btn:hover {
+  color: #b91c1c;
+}
+img {
+  width: 150px;
+  border-radius: 10px;
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  display: flex;
+  align-items: center;
+  top: 0;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

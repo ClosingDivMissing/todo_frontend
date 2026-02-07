@@ -1,0 +1,72 @@
+/* نوار بالا */
+.navbar {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  padding: 14px 0;
+  color: white;
+}
+
+/* کانتینر */
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* لوگو */
+.navbar-logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+/* لینک‌ها */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.navbar-link:hover {
+  opacity: 1;
+}
+
+/* ثبت‌نام */
+.navbar-link.register {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+/* خروج */
+.navbar-logout {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.navbar-logout:hover {
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
