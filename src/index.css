@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Kalameh";
+  src: url("../src/Fonts/Kalameh-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Kalameh";
+  src: url("../src/Fonts/Kalameh-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kalameh";
+  src: url("../src/Fonts/Kalameh-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Kalameh";
+  src: url("../src/Fonts/Kalameh-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
 * {
   font-family: "kalameh";
   margin: 0;
